@@ -26,7 +26,7 @@ function question2 () {
   let price14_18 = [];
 
   for (let i=0; i<data.length; i++) {
-    if (data[i].price > priceMin && data[i].price < priceMax) {
+    if (data[i].price >= priceMin && data[i].price <= priceMax) {
       price14_18.push(data[i]);
     }
   }
